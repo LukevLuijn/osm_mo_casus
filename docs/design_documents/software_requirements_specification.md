@@ -84,6 +84,18 @@ en zal hierbij gebruik maken van externe bedrijven/services om de betaling te vo
 > Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary is needed here. In most cases, this section will primarily contain a use case diagram and brief use case descriptions
 </details>
 
+![use case diagram RedCars](https://github.com/LukevLuijn/osm_mo_casus/blob/main/diagrams/export/use_case/use_case_diagram.svg?raw=true "Usecase Diagram")
+
+<details>
+    <summary> Verdere uitleg </summary>    
+
+![<<Gebruik>>](https://github.com/LukevLuijn/osm_mo_casus/blob/main/diagrams/export/use_case/use_case_gebruik.svg?raw=true "<<Gebruik>>")
+![<<CRUD>>](https://github.com/LukevLuijn/osm_mo_casus/blob/main/diagrams/export/use_case/use_case_crud.svg?raw=true "<<CRUD>>")
+</details>
+
+
+
+
 ## Domein model
 
 <details>
