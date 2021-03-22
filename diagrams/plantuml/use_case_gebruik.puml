@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+rectangle systemBoundery as "**<<Gebruik>>**"{
+    usecase inchecken   as "Inchecken"
+    usecase uitchecken  as "Uitchecken"
+    usecase openen      as "Openen"
+    usecase afsluiten   as "Afsluiten"
+    usecase starten     as "Starten"
+}
+
+actor gebruiker as "Gebruiker"
+
+gebruiker -- inchecken
+gebruiker -- uitchecken
+gebruiker -- openen
+gebruiker -- afsluiten
+gebruiker -- starten
+
+
+@enduml

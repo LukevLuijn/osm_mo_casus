@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+rectangle SystemBoundery as "RedCars"{
+    usecase accountRegisteren       as "Account\nregistreren"
+    usecase autoReserveren          as "Auto\nreserveren"
+    usecase abonnementAfsluiten     as "Afsluiten\nabonnement"
+    usecase autoGebruik             as "**<<Gebruik>>**\nAuto"
+    usecase opsturenGebruikerspas   as "Opsturen van\ngebruikerspas"
+    usecase beherenKlantGegevens    as "**<<CRUD>>**\nklant gegevens"
+    usecase beherenAutoGegevens     as "**<<CRUD>>**\nauto gegevens"
+
+    usecase afschrijvenKosten as "Afschrijven\nkosten"
+    usecase afschrijvenBoete  as "Afschrijven\nboete"
+
+    accountRegisteren .right.> opsturenGebruikerspas : **<<include>>**
+}
+
+actor klant as "Klant"
+actor medewerker as "Medewerker"
+
+klant -- accountRegisteren
+klant -- autoReserveren
+klant -- autoGebruik
+klant -- abonnementAfsluiten
+
+medewerker -- beherenAutoGegevens
+medewerker -- beherenKlantGegevens
+
+@enduml

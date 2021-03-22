@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+rectangle systemBoundery as " **<<CRUD>>**"{
+    usecase create as "Create"
+    usecase read as "Read"
+    usecase update as "Update"
+    usecase delete as "Delete"
+}
+
+actor admin as "admin"
+
+admin -- create
+admin -- read
+admin -- update
+admin -- delete
+
+@enduml

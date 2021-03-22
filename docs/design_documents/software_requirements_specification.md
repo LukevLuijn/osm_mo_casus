@@ -10,11 +10,6 @@
 | **Datum**     | 19-03-2021                                                        |
 | **Versie**    | 0.1                                                               |
 
-## Vragen
-
-- hoe is de paal verbonden met de applicatie?
-- Wat voor computers zitten er in de palen/auto's.
-
 # Inhoudsopgaven
 > TODO https://ecotrust-canada.github.io/markdown-toc/
 

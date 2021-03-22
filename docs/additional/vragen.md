@@ -1,0 +1,20 @@
+## Vragen
+
+[comment]: <> (> hoe is de paal verbonden met de applicatie?)
+
+[comment]: <> (> Wat voor computers zitten er in de palen/auto's?)
+
+[comment]: <> (> Is het een functionele requirement als het buiten ons systeem valt, bijvoorbeeld het starten van de auto dmv een gebruikerspas?)
+
+[comment]: <> (> is het toestemming verlenen tot het automatisch afschrijven een aparte use case? )
+
+[comment]: <> (> klant inactief stellen als apparte usecase of onderdeel van crud klantgegevens?)
+
+[comment]: <> (> afschrijven kosten en boete's apparte usecases? eigenlijk gewoon systeem werk. )
+
+[comment]: <> (> start/eindtijd aparte usecase of onderdeel van.   )
+
+> Wat wordt er verstaan onder 'veel tegelijk' voor het tegelijkertijd reserveren.
+
+> Hoe werkt de betaling precies, gebeurt het in geval van 'per km'/'per uur' direct na uitchecken bijvoorbeeld
+> of is het zo dat er wekelijks/maandelijks een afschrijving plaatsvind?

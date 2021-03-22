@@ -1,49 +1,70 @@
 
-# Requirements
+# Reqruiments
 
-Hieronder de eerste ingeving van de opdrachtomschrijving. Deze onderdelen zullen later verwerkt
-worden tot de (niet) functionele requirements. 
+## Functionele requirements
 
-## Registreren
-1. gebruiker moet kunnen registeren. [naam, adres, woonplaats, email, bankrekeningnummer]
-   <br>1.1 toestemming voor het automatisch afschrijven van rekeningen.
-   <br>1.2 automatisch toesturen van gebruikerspasje.
-   
-## Beheer gegevens
-1. medewerker moet de mogelijkheid hebben voor het beheren van klantgegevens. (CRUD)
-2. medewerker moet de mogelijkheid hebben voor het inactief stellen van een klant.
-3. medewerker moet de mogelijkheid hebben voor het beheren van autogegevens. (CRUD)
+> TODO iets over func reqs
 
-## Gebruik van de auto
-### Reservering
-1. De klant moet kunnen inzien waar de parkeerlocatie is van de auto's per stad.
-2. De klant moet kunnen inzien of een bepaalde auto beschikbaar is voor verhuur.
-3. De klant moet via de website de mogelijkheid hebben om een (beschikbare) auto te reserveren.
-4. Het reserveringsprotaal moet de mogelijkheid bieden voor het aangeven van een begin en eind moment voor een reservering.
+|Index    |Beschrijving|
+|---------|------------|
+|**FR_01**|De klant moet zich kunnen registreren door middel van zijn naam, adres, woonplaats, email en bankrekeningnummer op te geven.|
+|**FR_02**|vragen >> De klant moet toestemming kunnen geven voor het automatisch afschrijven van rekeningen.|
+|**FR_03**|De klant moet via de website de mogelijkheid hebben om een (beschikbare) auto te reserveren.|
+|**FR_04**|De klant moet de mogelijkheid hebben om een begin tijd van de reservering aan te geven.|
+|**FR_05**|De klant moet de mogelijkheid hebben om een eind tijd van de reservering aan te geven.|
+|**FR_06**|De klant moet via zijn of haar gebruikerspas een auto kunnen inchecken.|
+|**FR_07**|De klant moet via zijn of haar gebruikerspas een auto kunnen uitcheken.|
+|**FR_08**|De klant moet via zijn of haar gebruikerspas een auto kunnen openen.|
+|**FR_09**|De klant moet via zijn of haar gebruikerspas een auto kunnen afsluiten.|
+|**FR_10**|De klant moet via zijn of haar gebruikerspas een auto kunnen starten.|
+|**FR_11**|De klant moet de mogelijkheid hebben om een abonnement af te sluiten.|
+|**FR_12**|De klant moet de mogelijkheid hebben om te kiezen voor het **'per uur'** abonnement.|
+|**FR_13**|De klant moet de mogelijkheid hebben om te kiezen voor het **'per dag'** abonnement.|
+|**FR_14**|De klant moet de mogelijkheid hebben om te kiezen voor het **'per weekend'** abonnement.|
+|**FR_15**|De klant moet de mogelijkheid hebben om te kiezen voor het **'per week'** abonnement.|
+|**FR_16**|De klant moet de mogelijkheid hebben om te kiezen voor het **'km vrij'** abonnement.|
+|**FR_17**|De klant moet de mogelijkheid hebben om een **'personen'** model auto te kiezen.|
+|**FR_18**|De klant moet de mogelijkheid hebben om een **'station'** model auto te kiezen.|
+|**FR_19**|Een medewerker moet de mogelijkheid hebben voor het beheren* van klantgegevens.|
+|**FR_20**|Een medewerker moet de mogelijkheid hebben voor het beheren* van autogegevens.|
+|**FR_21**|Een medewerker moet de mogelijkheid hebben voor het inactief stellen van een klant.|
+|**FR_22**|Het systeem moet de kosten van de bankrekening van de klant afschrijven.|
+|**FR_23**|Het systeem moet de kosten van een overtreding van de bankrekeninng van de klant afshrijven.|
+|**FR_24**|Het systeem met na registratie van een klant automatisch een gebruikerspas naar de adres van de klant sturen.|
 
-### Gebruik
-5. De klant moet via zijn of haar gebruikerspas een auto kunnen inchecken.
-6. De klant moet via zijn of haar gebruikerspas een auto kunnen uitcheken.
-7. De klant moet via zijn of haar gebruikerspas een auto kunnen openen.
-8. De klant moet via zijn of haar gebruikerspas een auto kunnen afsluiten.
-9. De klant moet via zijn of haar gebruikerspas een auto kunnen starten.
-10. De paal moet lichtsignalen vertonen tot dat er uitgeschekt is door de gebruiker.
-11. De auto moet lichtsignalen vertonen tot dat er uitgeschekt is door de gebruiker.
+> **Beheren** houdt in dat de elementen in kwestie **aangemaakt, bekeken, veranderd** of **verwijderd** kunnen worden.
 
-## Betaling
-1. De klant moet de mogelijkheid hebben om een abonnement af te sluiten.
-2. De klant moet de mogelijkheid hebben om te kiezen voor het **'per uur'** abonnement.
-3. De klant moet de mogelijkheid hebben om te kiezen voor het **'per dag'** abonnement.
-4. De klant moet de mogelijkheid hebben om te kiezen voor het **'per weekend'** abonnement.
-5. De klant moet de mogelijkheid hebben om te kiezen voor het **'per week'** abonnement.
-6. De klant moet de mogelijkheid hebben om te kiezen voor het **'km vrij'** abonnement.
-7. De klant moet de mogelijkheid hebben om een **'personen'** model auto te kiezen.
-8. De klant moet de mogelijkheid hebben om een **'station'** model auto te kiezen.
-9. De kosten van de reservering moet worden afgeschreven van de rekening van de klant.
-10. De overtreding van de reservering (boete) moet worden afgeschreven van de rekening van de klant.
-11. De abonnementen moeten makkelijk uitbreidbaar zijn.
-12. De auto types moeten makkelijk uitbreidbaar zijn.
-13. Als de klant een betalings achterstand heeft mag hij/zij geen auto reserveren.
-14. Als de klant een betalings achterstand heeft mag hij/zij geen auto inchecken.
-15. Een klant mag niet op meerdere locaties tegelijkertijd ingechecked zijn.
 
+## Niet-functionele requirements
+
+> TODO iets over furps en niet func reqs
+> 
+> Reliability niet gebruikt.
+> 
+> Performance niet gebruikt.
+
+
+### Usability
+
+|Index     |Beschrijving|
+|----------|------------|
+|**NFR_01**|De klant moet kunnen inzien waar de parkeerlocatie is van de auto's per stad.|
+|**NFR_02**|De klant moet kunnen inzien of een bepaalde auto beschikbaar is voor verhuur.|
+|**NFR_03**|De auto moet lichtsignalen vertonen tot dat er uitgeschekt is door de gebruiker.|
+|**NFR_04**|De paal moet lichtsignalen vertonen tot dat er uitgeschekt is door de gebruiker.|
+|**NFR_05**|Als de klant een betalings achterstand heeft mag hij/zij geen auto reserveren.|
+|**NFR_06**|Als de klant een betalings achterstand heeft mag hij/zij geen auto inchecken.|
+|**NFR_07**|Een klant mag niet op meerdere locaties tegelijkertijd ingechecked zijn.|
+
+### Performance
+
+|Index     |Beschrijving|
+|----------|------------|
+|**NFR_08**|Het reserverings systeem moet een X aantal bezoekers tegelijk aankunnen zonder preformance verlies.|
+
+### Supportablity
+
+|Index     |Beschrijving|
+|----------|------------|
+|**NFR_08**|De abonnementen moeten makkelijk uitbreidbaar zijn. << verder uitschrijven.|
+|**NFR_09**|De auto types moeten makkelijk uitbreidbaar zijn. << verder uitschrijven.|
