@@ -85,13 +85,7 @@ en zal hierbij gebruik maken van externe bedrijven/services om de betaling te vo
 </details>
 
 ![use case diagram RedCars](https://github.com/LukevLuijn/osm_mo_casus/blob/main/diagrams/export/use_case/use_case_diagram.svg?raw=true "Usecase Diagram")
-
-<details>
-    <summary> Verdere uitleg </summary>    
-
 ![<<CRUD>>](https://github.com/LukevLuijn/osm_mo_casus/blob/main/diagrams/export/use_case/use_case_crud.svg?raw=true "<<CRUD>>")
-
-</details>
 
 #### Use case beschrijvingen
 
