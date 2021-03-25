@@ -157,5 +157,38 @@ etc..
 </details>
 
 
+> TODO iets over furps en niet func reqs
+>
+> Reliability niet gebruikt.
+>
+> Performance niet gebruikt.
+
+
+### Usability
+
+|Index     |Beschrijving|
+|----------|------------|
+|**NFR_01**|De klant moet kunnen inzien waar de parkeerlocatie is van de auto's per stad.|
+|**NFR_02**|De klant moet kunnen inzien of een bepaalde auto beschikbaar is voor verhuur.|
+|**NFR_03**|De auto moet lichtsignalen vertonen tot dat er uitgeschekt is door de gebruiker.|
+|**NFR_04**|De paal moet lichtsignalen vertonen tot dat er uitgeschekt is door de gebruiker.|
+|**NFR_05**|Als de klant een betalings achterstand heeft mag hij/zij geen auto reserveren.|
+|**NFR_06**|Als de klant een betalings achterstand heeft mag hij/zij geen auto inchecken.|
+|**NFR_07**|Een klant mag niet op meerdere locaties tegelijkertijd ingechecked zijn.|
+
+### Performance
+
+|Index     |Beschrijving|
+|----------|------------|
+|**NFR_08**|Het reserverings systeem moet een X aantal bezoekers tegelijk aankunnen zonder preformance verlies.|
+
+### Supportablity
+
+|Index     |Beschrijving|
+|----------|------------|
+|**NFR_08**|De abonnementen moeten makkelijk uitbreidbaar zijn. << verder uitschrijven.|
+|**NFR_09**|De auto types moeten makkelijk uitbreidbaar zijn. << verder uitschrijven.|
+
+
 
 
