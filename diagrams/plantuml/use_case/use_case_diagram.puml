@@ -4,29 +4,47 @@
 left to right direction
 
 rectangle SystemBoundery as "RedCars"{
-    usecase accountRegisteren       as "Account\nregistreren"
-    usecase autoReserveren          as "Auto\nreserveren"
-    usecase abonnementAfsluiten     as "Afsluiten\nabonnement"
-    usecase autoGebruik             as "**<<Gebruik>>**\nAuto"
+    usecase accountRegisteren       as "Registreren\naccount"
     usecase opsturenGebruikerspas   as "Opsturen van\ngebruikerspas"
-    usecase beherenKlantGegevens    as "**<<CRUD>>**\nklant gegevens"
-    usecase beherenAutoGegevens     as "**<<CRUD>>**\nauto gegevens"
+    usecase autoReserveren          as "Reserveren\nauto"
+    usecase abonnementAfsluiten     as "Afsluiten\nabonnement"
+
+    accountRegisteren   .down.> opsturenGebruikerspas : **<<include>>**
+    autoReserveren      .down.> abonnementAfsluiten : **<<include>>**
+
+    usecase autoOpenen      as "Openen auto"
+    usecase autoSluiten     as "Sluiten auto"
+    usecase autoInchecken   as "Inchecken auto"
+    usecase autoUitchecken  as "Uitchecken auto"
+    usecase autoStarten     as "Starten auto"
 
     usecase afschrijvenKosten as "Afschrijven\nkosten"
     usecase afschrijvenBoete  as "Afschrijven\nboete"
 
-    accountRegisteren .right.> opsturenGebruikerspas : **<<include>>**
+    autoUitchecken ..> afschrijvenKosten    : **<<include>>**
+    autoUitchecken <.. afschrijvenBoete     : **<<extend>>**
+
+    usecase beherenAutoGegevens     as "**<<CRUD>>**\nauto gegevens"
+    usecase beherenKlantGegevens    as "**<<CRUD>>**\nklant gegevens"
+    usecase klantInactief           as "Inactief stellen\nklant"
+
+    beherenKlantGegevens <.. klantInactief : **<<extend>>**
 }
 
-actor klant as "Klant"
+actor klant as "Gebruiker"
+actor member as "Member"
 actor medewerker as "Medewerker"
 
 klant -- accountRegisteren
-klant -- autoReserveren
-klant -- autoGebruik
-klant -- abonnementAfsluiten
 
 medewerker -- beherenAutoGegevens
 medewerker -- beherenKlantGegevens
+
+member -- autoReserveren
+member -- autoOpenen
+member -- autoSluiten
+member -- autoInchecken
+member -- autoUitchecken
+member -- autoStarten
 
 @enduml
