@@ -89,12 +89,28 @@ en zal hierbij gebruik maken van externe bedrijven/services om de betaling te vo
 <details>
     <summary> Verdere uitleg </summary>    
 
-![<<Gebruik>>](https://github.com/LukevLuijn/osm_mo_casus/blob/main/diagrams/export/use_case/use_case_gebruik.svg?raw=true "<<Gebruik>>")
 ![<<CRUD>>](https://github.com/LukevLuijn/osm_mo_casus/blob/main/diagrams/export/use_case/use_case_crud.svg?raw=true "<<CRUD>>")
+
 </details>
 
+#### Use case beschrijvingen
 
-
+|index|Naam|Beschrijving|
+|-----|----|------------|
+|**UC_01**|Account Registeren      |Een gebruiker kan een account registeren. Het registeren van een acount kan door middel van het invoeren van de naam, adres en woonplaats van de klant. Vervolgens moet de klant zijn of haar email adres en bankrekeningnummer invoeren. Tot slot moet de klant de voorwaardes acepteren waaronder het toestemming verlenen tot het automatisch afschrijven van de gemaakte kosten.|
+|**UC_02**|Opsturen Gebruikerspas  |Wanneer een gebruiker de registratie heeft voltooid zal er een gebruikerspas naar het opgegeven adres worden gestuurd, deze pas is gelinkt aan de account van de desbetreffende gebruiker.|
+|**UC_03**|Auto Reserveren         |Een RedCars member kan een auto reserveren. Het reserveren van een auto kan via het weportaal. De member zal moeten aangeven welke van de beschikbare auto's hij of zij zou willen reserveren. Vervolgens zal de start en eind datum aangegeven moeten worden. En tot slot moet de member een abonement kiezen (UC_0X : abonnement aflsluiten)|
+|**UC_04**|Abonnement Afsluiten    |Een RedCars member kan een abonnement afsluiten voor het reserveren van een auto. Er zijn vijf verschillende abonnementen: <br> 1. **Per uur**, met deze keuze zullen de kosten per uur berekend worden. <br> 2. **Per dag**, met deze keuze zullen de kosten per dag berekend worden.<br> 3. **Per weekend**, met deze keuzen kun je een auto huren voor een weekend.<br>4. **Per week**, met deze keuze zullen de kosten per week brekend worden.<br>5. **KM Vrij**, Met deze keuzen wordt er een intieel bedrag betaald en kan de gebruiker de auto onbeperkt gebruiken.|
+|**UC_05**|Beheren Klant Gegevens  |Een RedCars medewerker kan de gegevens van de klanten beheren, dit houdt in dat de medewerker klanten kan aanmaken en verwijderen. En ook de gegevens van de klant kan bekijken en verwijderen.|
+|**UC_06**|Inactief stellen klant  |Een RedCars medewerker kan de geregistreerde account van een klant op inactief stellen, dit is bijvoorbeeld een gevolg van achterstallige betalingen.|
+|**UC_07**|Beheren Auto Gegevens   |Een RedCars medewerker kan de gegevens van de auto's beheren. Het beheren van de autogegevens houdt in dat de data per auto bekeken, veranderd en verwijderd kan worden. Tevens kan een medewerker nieuwe auto's aanmaken. |
+|**UC_08**|Auto Inchecken          |Een RedCars member kan met zijn of haar gebruikerspas een auto Inchecken als deze gereserveerd is door de account van de gebruikerspas.|
+|**UC_09**|Auto Openen             |Een RedCars member kan met zijn of haar gebruikerspas een auto openen als deze auto ingechecked is door de account van de gebruikerspas.|
+|**UC_10**|Auto Sluiten            |Een RedCars member kan met zijn of haar gebruikerspas een auto afsluiten als deze auto ingechecked is door de account van de gebruikerspas.|
+|**UC_11**|Auto Starten            |Een RedCars member kan met zijn of haar gebruikerspas een auto starten als deze auto ingechecked is door de account van de gebruikerspas.|
+|**UC_12**|Auto Uitchecken         |Een RedCars member kan met zijn of haar gebruikerspas een auto als deze auto ingechecked is door de account van de gebruikerspas.|
+|**UC_13**|Afschrijven Kosten      |Het systeem zal wanneer er een auto uitgechecked is de kosten berekenen van het gebruik en deze kosten vervolgens afschrijven van het aan de gebruikerspas gekoppelde bankrekeningnummer.|
+|**UC_14**|Afschrijven Boete       |Het systeem zal wanneer er een auto uitgechecked is de boetekosten berekenen van het gebruik en deze kosten vervolgens afschrijvenvan het aan de gebruikerspas gekoppelde bankrekeningnummer.|
 
 ## Domein model
 

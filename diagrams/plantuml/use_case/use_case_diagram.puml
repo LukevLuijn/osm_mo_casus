@@ -3,30 +3,73 @@
 
 left to right direction
 
+'|**UC_01**|Account Registeren      |
+'|**UC_02**|Opsturen Gebruikerspas  |
+'|**UC_03**|Auto Reserveren         |
+'|**UC_04**|Abonnement Afsluiten    |
+'|**UC_05**|Beheren Klant Gegevens  |
+'|**UC_06**|Inactief stellen klant  |
+'|**UC_07**|Beheren Auto Gegevens   |
+'|**UC_08**|Auto Inchecken          |
+'|**UC_09**|Auto Openen             |
+'|**UC_10**|Auto Sluiten            |
+'|**UC_11**|Auto Starten            |
+'|**UC_12**|Auto Uitchecken         |
+'|**UC_13**|Afschrijven Kosten      |
+'|**UC_14**|Afschrijven Boete       |
+
 rectangle SystemBoundery as "RedCars"{
-    usecase accountRegisteren       as "Registreren\naccount"
-    usecase opsturenGebruikerspas   as "Opsturen van\ngebruikerspas"
-    usecase autoReserveren          as "Reserveren\nauto"
-    usecase abonnementAfsluiten     as "Afsluiten\nabonnement"
+    usecase accountRegisteren       as "**UC-01**
+    __
+    Registreren\naccount"
+    usecase opsturenGebruikerspas   as "**UC-02**
+    __
+    Opsturen van\ngebruikerspas"
+    usecase autoReserveren          as "**UC-03**
+    __
+    Reserveren\nauto"
+    usecase abonnementAfsluiten     as "**UC-04**
+    __
+    Afsluiten\nabonnement"
 
     accountRegisteren   .down.> opsturenGebruikerspas : **<<include>>**
     autoReserveren      .down.> abonnementAfsluiten : **<<include>>**
 
-    usecase autoOpenen      as "Openen auto"
-    usecase autoSluiten     as "Sluiten auto"
-    usecase autoInchecken   as "Inchecken auto"
-    usecase autoUitchecken  as "Uitchecken auto"
-    usecase autoStarten     as "Starten auto"
+    usecase autoOpenen      as "**UC-09**
+    __
+    Openen auto"
+    usecase autoSluiten     as "**UC-10**
+    __
+    Sluiten auto"
+    usecase autoInchecken   as "**UC-08**
+    __
+    Inchecken auto"
+    usecase autoUitchecken  as "**UC-12**
+    __
+    Uitchecken auto"
+    usecase autoStarten     as "**UC-11**
+    __
+    Starten auto"
 
-    usecase afschrijvenKosten as "Afschrijven\nkosten"
-    usecase afschrijvenBoete  as "Afschrijven\nboete"
+    usecase afschrijvenKosten as "**UC-13**
+    __
+    Afschrijven\nkosten"
+    usecase afschrijvenBoete  as "**UC-14**
+    __
+    Afschrijven\nboete"
 
     autoUitchecken ..> afschrijvenKosten    : **<<include>>**
     autoUitchecken <.. afschrijvenBoete     : **<<extend>>**
 
-    usecase beherenAutoGegevens     as "**<<CRUD>>**\nauto gegevens"
-    usecase beherenKlantGegevens    as "**<<CRUD>>**\nklant gegevens"
-    usecase klantInactief           as "Inactief stellen\nklant"
+    usecase beherenAutoGegevens     as "**UC-07**
+    __
+    **<<CRUD>>**\nauto gegevens"
+    usecase beherenKlantGegevens    as "**UC-05**
+    __
+    **<<CRUD>>**\nklant gegevens"
+    usecase klantInactief           as "**UC-06**
+    __
+    Inactief stellen\nklant"
 
     beherenKlantGegevens <.. klantInactief : **<<extend>>**
 }
